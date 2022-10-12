@@ -21,7 +21,7 @@ body{
 }
 /* SPACERS */
 .m1-left{
-margin-left: 1rem;
+margin-left: 1.5rem;
 }
 
 /* BUTTONS */
@@ -31,6 +31,7 @@ margin-left: 1rem;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .signup{
     text-transform: uppercase;
@@ -88,6 +89,14 @@ margin-left: 1rem;
     font-size: 0.9rem;
     border: 0;
     background-color: transparent;
+}
+._clr{
+    border: 0;
+    font-size: 0.9rem;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .def-text-ftr{
     text-transform: uppercase;
@@ -152,30 +161,26 @@ ul{
     cursor: pointer;
     justify-content: flex-start;
 }
-.navbar a{
+.navbar div a{
     color: #333;
     text-decoration: none;
     font-size: 14px;
     padding: 10px 25px;
-    margin: 5px;
+
     text-transform: uppercase;
     font-weight: 600;
 
 }
-.navbar .dropdown-menu a.dropdown-item{
-    padding: 12px 20px;
 
+.navbar .btn-group ul li .dropdown-item{
+  text-transform: none;
 }
-.navbar .dropdown-menu li{
-   margin: 0;
-   padding: 0;
-
+.profile-image{
+    border-radius: 50%;
+    width:10%;
+    padding-right: 5px;
 }
-.navbar .dropdown-menu li:hover{
-    background-color: transparent;
-}
-
-
+    
 .header{
     /* background: rgb(186,47,250);
 background: -moz-linear-gradient(90deg, rgba(186,47,250,1) 6%, rgba(68,0,255,1) 100%);
@@ -279,6 +284,7 @@ section{
     text-decoration: underline;
     cursor: pointer;
    }
+   .navbar .btn-group ul li i,
 .footer-right i{    
     padding: 0 5px;
     vertical-align: middle;
@@ -298,23 +304,8 @@ section{
 
 
 /* LOGIN PAGE */
-.loginbox{
-
-    width: 100%;
-
-    background: url(/images/landingmain.jpg);
-    background-position: 50% 50%;
-    padding: 20px;
-}
-.loginstyle{
-    background: #ad06ca;
-    color: #fff;
-
-}
-.loginstyle input{
-    outline: none;
-    border: 0;
-
+.frmsign{
+    background-color:rgba(158, 158, 158, 0.212);
 }
 
 @media (max-width: 768px) {
@@ -343,7 +334,10 @@ section{
  .navbar img .imglogo-tq{
      width: 25%;
  }
- 
+ .resze{
+    padding: 0 auto;
+    margin: 0 auto;
+ }
 
 /* BUTTONS */
 .m-btn{ /* MAIN BUTTON STYLE DEFAULT */
